@@ -85,11 +85,16 @@ ul {
     flex-grow: 1;
 
     li {
-        margin: 5px;
+        margin: 0 10px;
 
         a {
             text-decoration: none;
             text-transform: uppercase;
+
+            &.active {
+                color: blue;
+                border-bottom: 4px solid blue;
+            }
         }
     }
 

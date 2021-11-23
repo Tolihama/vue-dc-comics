@@ -3,8 +3,8 @@
         <div class="container">
             <ul>
                 <li v-for="(shop, index) in shopList" :key="`shop-${index}`">
-                    <!-- <img :src="`../assets/buy-comics-digital-comics.png`" :alt="shop.text"> -->
-                    <img src="../assets/buy-comics-digital-comics.png" :alt="shop.text">
+                    <img :src="`../assets/${shop.logoImg}`" :alt="shop.text">
+<!--                     <img src="../assets/buy-comics-digital-comics.png" :alt="shop.text"> -->
                     <a :href="shop.url"> {{ shop.text }} </a>
                 </li>
             </ul>

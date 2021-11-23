@@ -2,8 +2,8 @@
     <div class="container">
         <img src="../assets/dc-logo.png" alt="DC Logo">
         <ul>
-            <li v-for="(link, index) in navLinks" :key="`headerNavLink-${index}`">
-                <a :class="{active: link.isActive}" :href="link.url">{{ link.text }}</a>
+            <li v-for="(link, index) in navLinks" :class="{active: link.isActive}" :key="`headerNavLink-${index}`">
+                <a :href="link.url">{{ link.text }}</a>
             </li>
         </ul>
     </div>  
@@ -74,7 +74,10 @@ export default {
 <style scoped lang="scss">
 .container {
     display: flex;
-    padding: 20px 0;
+
+    img {
+        padding: 20px 0;
+    }
 }
 
 ul {
@@ -85,16 +88,23 @@ ul {
     flex-grow: 1;
 
     li {
+        display: flex;
+        align-items: center;
         margin: 0 10px;
+        height: 100%;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &.active {
+            color: blue;
+            border-bottom: 4px solid blue;
+        }
 
         a {
             text-decoration: none;
             text-transform: uppercase;
-
-            &.active {
-                color: blue;
-                border-bottom: 4px solid blue;
-            }
         }
     }
 

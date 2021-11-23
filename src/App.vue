@@ -40,4 +40,13 @@ export default {
 
 <style lang="scss">
 @import './styles/general';
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
 </style>

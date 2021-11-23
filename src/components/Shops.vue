@@ -3,7 +3,7 @@
         <div class="container">
             <ul>
                 <li v-for="(shop, index) in shopList" :key="`shop-${index}`">
-                    <img :src="`../assets/${shop.logoImg}`" :alt="shop.text">
+                    <img :src="require(`../assets/${shop.logoImg}`)" :alt="shop.text">
 <!--                     <img src="../assets/buy-comics-digital-comics.png" :alt="shop.text"> -->
                     <a :href="shop.url"> {{ shop.text }} </a>
                 </li>
@@ -67,10 +67,15 @@ div {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                width: 100%;
 
                 img {
-                    height: 50%;
+                    height: 40%;
                     margin-right: 10px;
+                }
+
+                &:last-child img {
+                    height: 25%;
                 }
 
                 a {

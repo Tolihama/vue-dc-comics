@@ -92,6 +92,8 @@ ul {
         align-items: center;
         margin: 0 10px;
         height: 100%;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
 
         &:last-child {
             margin: 0;

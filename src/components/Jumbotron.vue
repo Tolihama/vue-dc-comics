@@ -15,10 +15,11 @@ export default {
 
 <style scoped lang="scss">
 .jumbotron {
-    height: 500px;
+    max-height: 500px;
     overflow: hidden;
 
     img {
+        display: block;
         width: 100%;
     }
 }

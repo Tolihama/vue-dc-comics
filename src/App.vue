@@ -29,9 +29,6 @@ import Shops from "./components/Shops.vue";
 import FooterLinks from "./components/FooterLinks.vue";
 import Social from "./components/Social.vue";
 
-/* Import Data */
-import data from './data/dc-comics';
-
 export default {
     name: "App",
     components: {
@@ -42,16 +39,12 @@ export default {
         FooterLinks,
         Social,
     },
-    data() {
-        return {
-            data,
-        };
-    },
 };
 </script>
 
 <style lang="scss">
 @import "./styles/general";
+@import "./styles/vars";
 
 #app {
     display: flex;

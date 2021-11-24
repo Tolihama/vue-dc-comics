@@ -68,7 +68,7 @@ div {
 
         ul.social {
             display: flex;
-            justify-content: end;
+            justify-content: flex-end;
             align-items: center;
             flex-grow: 1;
             list-style: none;

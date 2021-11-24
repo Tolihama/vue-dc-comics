@@ -22,7 +22,7 @@ import TitleSection from '../components/TitleSection.vue';
 import Card from '../components/Card.vue';
 
 /* Import data */
-import Dataset from '../data/dc-comics';
+import Data from '../data/dc-comics';
 
 export default {
     name: 'Content',
@@ -32,7 +32,7 @@ export default {
     },
     data() {
         return {
-            Data: Dataset,
+            Data,
         };
     },
 }
